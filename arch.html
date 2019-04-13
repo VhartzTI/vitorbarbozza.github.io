@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Arch Linux</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="style_arch.css">
+		<link rel="shortcut icon" href="_img/favicon.ico">
+        <script src="main.js"></script> 
+    </head>
+    <body>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">PKG-Helper</a></li>
+                <li><a href="#">Linux</a>
+                    <ul>
+                        <li><a href="debian.html">Debian</a>
+                        </li>
+                        <li><a href="arch.html">Arch</a></li>
+                    </ul>
+                </li>    
+                    <li><a href="#"></a></li>                
+            </ul>
+        </nav>
+	<img src="_img/arch-logo.png">
+	<div>
+		<p class="borda"><strong>Arch Linux</strong> (ou <a href="arch.html">Arch</a>) é uma distribuição <strong><em>Linux</em></strong> para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense <strong><em>Judd Vinet</em></strong>, esse sistema operacional se apresenta de maneira diferente de outros, como <strong>Windows e MacOS</strong>. Além de ser composto predominantemente por software livre e de código aberto, ele envolve contribuições da comunidade.<br>
+		<h1>Caracteristicas</h1>
+		</p>O <strong>Arch <em>Linux</em></strong> usa o modelo rolling release. Com esse sistema, os usuários podem ter acesso às últimas atualizações estáveis. Por exemplo, enquanto um usuário de Arch tem acesso imediato a última versão do <strong>GNOME</strong>, um de <strong>Ubuntu</strong> precisa esperar que a Canonical libere, na próxima versão do sistema operacional, essa atualização
+		<h1>Gerenciador de Pacotes PACMAN</h1>
+		<p>O desenvolvimento é focado na elegância, minimalismo e simplicidade no código, e espera que o usuário faça alguns esforços para compreender o modo de funcionamento do sistema. O gerenciador de pacotes, <strong>Pacman</strong>, foi escrito especialmente para o <strong>Arch <em>Linux</em></strong> e é usado para instalar, remover, pesquisar e atualizar os pacotes do sistema.</p>
+		<h2>Sintaxe</h2>
+			<li><strong>sudo pacman -Sy</li></strong> = sincroniza os repositórios.
+			<li><strong>sudo pacman -Su</li></strong> = procura por atualização.
+			<li><strong>sudo pacman -Syu</li></strong> = sincroniza os repositórios/procura por atualização.
+			<li><strong>sudo pacman -Syy</li></strong> = sincroniza os repositórios do Manjaro Linux.
+			<li><strong>sudo pacman -Syyu</li></strong> = sincronização total/procura por atualização.
+			<li><strong>sudo pacman -S pacote</li></strong> = instala um pacote.
+			<li><strong>sudo pacman -R pacote</li></strong> = remove um pacote.
+			<li><strong>sudo pacman -Rs pacote</li></strong> = remove o pacote junto com as dependências não usadas por outros pacotes.
+			<li><strong>sudo pacman -Rsn pacote</li></strong> = remove o pacote junto com as dependências não usadas por outros pacotes e junto com os arquivos de configuração.
+			<li><strong>sudo pacman -Ss pacote</li></strong> = procura por um pacote.
+			<li><strong>sudo pacman -Sw pacote</li></strong> = apenas baixa o pacote e não o instala.
+			<li><strong>sudo pacman -Si pacote</li></strong> = mostra informações de um pacote não instalado.
+			<li><strong>sudo pacman -Qi pacote</li></strong> = mostra informações do pacote já instalado.
+			<li><strong>sudo pacman -Se pacote</li></strong> = instala apenas as dependências.
+			<li><strong>sudo pacman -Ql pacote</li></strong> = mostra todos os arquivos pertencentes ao pacote.
+			<li><strong>sudo pacman -Qu</li></strong> = mostra os pacotes que serão atualizados.
+			<li><strong>sudo pacman -Q</li></strong> = lista todos os pacotes instalados.
+			<li><strong>sudo pacman -Qo arquivo</li></strong> = mostra a qual pacote aquele arquivo pertence.
+			<li><strong>sudo pacman -Qdt</li></strong> = lista pacotes desnecessários, sem dependências
+			<li><strong>sudo pacman -Rns $(pacman -Qqdt)</li></strong> = apaga pacotes desnecessários, sem dependências
+			<li><strong>sudo pacman -A pacote.pkg.tar.gz</li></strong> = instala um pacote local.
+			<li><strong>sudo pacman -Sc</li></strong> = deleta do cache todos os pacotes antigos.
+			<li><strong>sudo pacman -Scc</li></strong> = limpa o cache, removendo todos os pacotes existentes no /var/cache/pacman/pkg/.
+			<li><strong>sudo pacman-optimize</li></strong> = otimiza a base de dados do pacman.
+			<li><strong>sudo pacman -Sdd</li></strong> = instala ignorando as dependências.
+			<li><strong>sudo pacman -Rdd</li></strong> = elimina um pacote ignorando as dependências.
+			<li><strong>sudo pacman-mirrors.conf</li></strong> = para gerenciar pacman.cof
+			<li><strong>sudo pacman-mirrors -g</li></strong> = para gerar um novo mirrorlist
+			<li><strong>sudo pacman -U</li></strong> home/user/arquivo.tar.xz = instalar pacotes baixados no pc
+			<li><strong>sudo pacman -U</li></strong> http://www.site.com/arquivo.tar.xz = instalar pacotes baixados via download
+			<li><strong>sudo pacman -Qem</li></strong> = lista pacotes instalados do repo AUR
+			<li><strong>sudo pacman -Rscn</li></strong> = desinstala pacotes e suas dependencias e seus registros, tudo.
+			<li><strong>sudo pacman -S</li></strong> pacote –noconfirm = Instala o pacote sem precisar confirmar com “yes/no ,S/N”…
+			<li><strong>sudo pacman -Syu –ignoregroup pacote1 , pacote2…</li></strong> = sincroniza os repositórios/procura por atualização e ignora os grupos dos pacotes solicitados
+	</div>
+</body>
+</html>
