@@ -1,20 +1,54 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-	*{
-		margin: 0;
-		padding: 0;
-	}
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-	body{
-		background-color: #ddd;
-		font-family: 'Roboto Condensed';
-	}
+body {
+	background-color: #e63946;
+	margin: auto;
+	padding: auto;
+}
+
+p {
+	text-indent: 2em;
+}
+
+h1 {
+	font-family: 'Syne Mono', monospace;
+	font-size: 30px;
+}
+
+#contato {
+	padding: 100px;
+	right: 200px;
+}
+
+#uma {
+	position: absolute;
+	left: 800px;
+	padding: 10px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+#foto {
+	padding: 20px;
+	border: transparent;
+	width: 40%;
+	position: relative;
+}
+
+#corpo {
+	position: absolute;
+	left: 50px;
+	padding: 5px;
+}
+
 
 	.nav_tabs{
-		width: 1000px;
-		height: 800px;
+		width: 700px;
+		height: 200px;
 		margin: 0px auto;
-		background-color: #fff;
-		position: relative;
+		background-color: #e63946;
+		position: absolute;
 	}
 
 	.nav_tabs ul{
@@ -25,56 +59,49 @@
 		float: left;
 	}
 
-
 	.tab_label{
 		display: block;
 		width: 100px;
 		background-color: #363b48;
-		padding: 15px;
+		padding: 10px;
 		font-size: 20px;
-		color:#e54e43;
+		color:#fff;
 		cursor: pointer;
 		text-align: center;
 	}
 
-	.tab_label:active{
-		color: #87d3b7;
-	}
 
 	.nav_tabs .rd_tab { 
 	display:none;
 	position: absolute;
-	}
+}
 
 .nav_tabs .rd_tab:checked ~ label { 
-	background-color: #e54e43;
+	background-color: #e63946;
 	color:#fff;}
 
 .tab-content{
-	border-top: solid 7px #e54e43;
+	border-top: solid 10px #e54e43;
 	background-color: #fff;
 	display: none;
 	position: absolute;
-	height: 120px;
-	width: 700px;
-	left: 0;	
+	height: 700px;
+	width: 650px;
+	left: 0;
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;	
 }
 
 .rd_tab:checked ~ .tab-content{
 	display: block;
 }
 .tab-content h2{
-	padding: 10px;
-	color: #87d3b7;
+	padding: 15px;
+	color: #e63946;
+	text-decoration: underline;
 }
-
-.tab-content h2:hover{
-	color: green;
-	cursor: pointer;
-	position: relative;
-}
-
 .tab-content article{
 	padding: 10px;
-	color: #555;
-}
+
+} 
+
