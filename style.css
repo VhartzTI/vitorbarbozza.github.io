@@ -115,7 +115,7 @@ main {
   h1 {
     max-width: 480px;
     text-align: center;
-    margin: 60px auto;    
+    margin: 0px auto;    
     color: rgb(0, 0, 0);
   }
 
